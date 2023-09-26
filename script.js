@@ -6,9 +6,11 @@ function toggleContent() {
 
     const shopSection = document.getElementById('shop-section');
     const contactSection = document.getElementById('contact-section');
+    const categoriesSection = document.getElementById('categories');
 
     shopSection.classList.toggle('show', isContentVisible);
     contactSection.classList.toggle('show', isContentVisible);
+    categoriesSection.classList.toggle('show', isContentVisible);
 
     const button = document.querySelector('.scroll-button button');
     button.classList.toggle('clicked', isContentVisible);
@@ -33,4 +35,9 @@ function contactViaEmail() {
 function contactViaSMS() {
     // Implement your SMS contact functionality here
     console.log('Contacting via SMS...');
+}
+
+function showCategories() {
+    const categories = document.getElementById('categories');
+    categories.style.display = 'block';
 }

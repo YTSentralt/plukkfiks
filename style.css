@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s;
 }
 
 .container {
@@ -45,11 +46,31 @@ body {
 }
 
 #shop-section,
-#contact-section {
+#contact-section,
+#categories {
     display: none;
 }
 
 #shop-section.show,
-#contact-section.show {
+#contact-section.show,
+#categories.show {
     display: block;
+}
+
+#categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+#categories ul li {
+    margin-bottom: 10px;
+}
+
+#categories ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#categories ul li a:hover {
+    text-decoration: underline;
 }

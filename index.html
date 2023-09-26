@@ -2,7 +2,7 @@
 <html lang="no" dir="ltr">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Plukkfiks UB</title>
+    <title></title>
 </head>
 <body>
 
@@ -16,13 +16,19 @@
 <main>
     <div class="container">
         <div class="scroll-button">
-            <button onclick="showMore()">Se mer</button>
+            <button onclick="toggleContent()">Se mer</button>
         </div>
 
         <section class="fade-in" id="content">
             <h2>Våre Produkter</h2>
-            <p>Utforsk vårt utvalg av opptenningsved. Dette er en fiktiv tekst som fyller plass og lar deg rulle ned.</p>
-            <!-- Legg til bilder og produktinformasjon her -->
+            <button onclick="showCategories()">Våre Kategorier</button>
+            <div id="categories" style="display: none;">
+                <ul>
+                    <li><a href="#">Dårlig Ved</a></li>
+                    <li><a href="#">God Ved</a></li>
+                    <li><a href="#">Best Ved</a></li>
+                </ul>
+            </div>
         </section>
 
         <section class="fade-in" id="shop-section">
