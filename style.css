@@ -1,21 +1,6 @@
-body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* Eksisterende CSS-regler */
 
-.container {
-    padding: 20px;
-    text-align: center;
-}
-
-.scroll-button {
-    margin-top: 20px;
-    text-align: center;
-}
-
+/* Lysende effekt */
 .scroll-button button {
     padding: 10px 20px;
     background-color: #000;
@@ -23,24 +8,17 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .scroll-button button:hover {
     background-color: #444;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.fade-in.show {
-    opacity: 1;
-}
-
-#content {
-    padding: 20px 0;
+/* Tekstendring etter klikk */
+.scroll-button button.clicked::after {
+    content: "Se mindre";
 }
 
 #shop-section,
