@@ -3,49 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velkommen til Plukkfiks</title>
+    <title>Våre Produkter - Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>Velkommen til Plukkfiks</h1>
-        <p>Vi selger opptenningsved av høy kvalitet.</p>
+        <h1>Våre Produkter</h1>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <div class="scroll-button">
-            <button onclick="toggleContent()">Se mer</button>
-        </div>
-
-        <section class="fade-in" id="content">
-            <h2>Våre Produkter</h2>
-            <button onclick="showCategories()">Våre Kategorier</button>
-            <div id="categories" style="display: none;">
-                <ul>
-                    <li><a href="#">Dårlig Ved</a></li>
-                    <li><a href="#">God Ved</a></li>
-                    <li><a href="#">Best Ved</a></li>
-                </ul>
-            </div>
+        <section class="category">
+            <h2><a href="produkter.html">Dårlig Ved</a></h2>
         </section>
 
-        <section class="fade-in" id="shop-section">
-            <h2>Nettbutikk</h2>
-            <button onclick="redirectToShop()">Gå til nettbutikk</button>
+        <section class="category">
+            <h2><a href="produkter.html">God Ved</a></h2>
         </section>
 
-        <section class="fade-in" id="contact-section">
-            <h2>Kontakt Oss</h2>
-            <button onclick="showContactInfo()">Vis kontaktinformasjon</button>
-            <div id="contact-info" style="display: none;">
-                <!-- Legg til kontaktinformasjon her -->
-                <button onclick="contactViaEmail()">Kontakt via e-post</button>
-                <button onclick="contactViaSMS()">Kontakt via SMS</button>
-            </div>
+        <section class="category">
+            <h2><a href="produkter.html">Best Ved</a></h2>
         </section>
     </div>
 </main>
