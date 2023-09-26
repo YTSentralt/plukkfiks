@@ -29,12 +29,12 @@ body {
 }
 
 .social-links li a {
-     background-color: #222;
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 10px;
+     background-color: #221;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 8px;
         text-align: left;
-        box-shadow: 0 0 10px rgba(75, 0, 130, 0.5); /* Legger til en boks-skygge med indigo farge */
+        box-shadow: 0 0 8px rgba(73, 0, 130, 0.5); /* Legger til en boks-skygge med indigo farge */
         transition: box-shadow 0.3s; /* Legger til overgangseffekt for boks-skyggen */
 }
 
