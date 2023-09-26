@@ -1,0 +1,65 @@
+/* Global styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Scroll animation */
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fade-in 1s forwards;
+}
+
+/* Sticky menu */
+.sticky-menu {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+body.scrolled .sticky-menu {
+    display: block;
+}
+
+.sticky-menu button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sticky-menu button:hover {
+    background-color: #333;
+    color: #ffffff;
+}
