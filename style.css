@@ -10,6 +10,8 @@ body {
 .container {
     padding: 20px;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .scroll-button {
@@ -49,6 +51,7 @@ body {
 #contact-section,
 #categories {
     display: none;
+    padding: 20px 0;
 }
 
 #shop-section.show,
