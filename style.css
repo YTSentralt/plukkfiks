@@ -1,65 +1,87 @@
-/* Global styles */
-body {
-    background-color: #121212;
-    color: #ffffff;
-    transition: background-color 0.5s;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+<head>
+    <style>
+        /* Eksisterende stilregler */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            transition: background-color 0.5s;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
 
-.container {
-    padding: 50px;
-    text-align: center;
-}
+        /* Animasjon for rulling nedover simulering */
+        @keyframes scroll-animation {
+            0% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-20px);
+            }
+            50% {
+                transform: translateY(-40px);
+            }
+            75% {
+                transform: translateY(-60px);
+            }
+            100% {
+                transform: translateY(-80px);
+            }
+        }
 
-section {
-    padding: 20px 0;
-}
+        .scroll-button button {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: scroll-animation 1s alternate infinite;
+        }
 
-section h2 {
-    margin-bottom: 10px;
-}
+        .scroll-button button:hover {
+            background-color: #333;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
 
-/* Scroll animation */
-@keyframes fade-in {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
+    <header>
+        <div class="container">
+            <h1>Velkommen til Plukkfiks</h1>
+            <p>Vi selger opptenningsved av høy kvalitet.</p>
+        </div>
+    </header>
 
-.fade-in {
-    animation: fade-in 1s forwards;
-}
+    <main>
+        <div class="container">
+            <div class="scroll-button">
+                <button onclick="scrollToContent()">Se mer</button>
+            </div>
 
-/* Sticky menu */
-.sticky-menu {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
+            <section class="fade-in" id="content">
+                <h2>Våre Produkter</h2>
+                <p>Utforsk vårt utvalg av opptenningsved. Dette er en fiktiv tekst som fyller plass og lar deg rulle ned.</p>
+                <!-- Legg til bilder og produktinformasjon her -->
+            </section>
 
-body.scrolled .sticky-menu {
-    display: block;
-}
+            <section class="fade-in">
+                <h2>Kontakt Oss</h2>
+                <p>Har du spørsmål? Ta gjerne kontakt med oss. Dette er en fiktiv tekst som fyller plass og lar deg rulle ned.</p>
+                <!-- Legg til kontaktskjema eller kontaktinformasjon her -->
+            </section>
+        </div>
+    </main>
 
-.sticky-menu button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+    <script>
+        function scrollToContent() {
+            const contentSection = document.getElementById('content');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
-.sticky-menu button:hover {
-    background-color: #333;
-    color: #ffffff;
-}
+</body>
+</html>
