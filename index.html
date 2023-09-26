@@ -3,60 +3,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Våre Produkter - Plukkfiks</title>
+    <title>Velkommen til Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index-style.css"> <!-- Ny CSS for startsiden -->
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>Våre Produkter</h1>
-        <p>Velkommen til Plukkfiks!</p>
+        <h1>Velkommen til Plukkfiks</h1>
+        <p>Følg oss på sosiale medier:</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/sentralt.07" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@sentralt" target="_blank">YouTube</a></li>
+            <li><a href="https://www.twitter.com/ytsentralt" target="_blank">Twitter</a></li>
+        </ul>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <section class="category">
-            <h2><a href="produkter.html">Dårlig Ved</a></h2>
+        <section class="intro-section">
+            <h2>Utforsk Opptenningsved med Plukkfiks</h2>
+            <p>Finn kvalitetsopptenningsved og lær hvordan den produseres.</p>
+            <button onclick="redirectToProducts()">Se Produkter</button>
         </section>
 
-        <section class="category">
-            <h2><a href="produkter.html">God Ved</a></h2>
-        </section>
+        <section class="articles-section">
+            <h2>Nye Artikler</h2>
+            <div class="article">
+                <h3>Hvordan produserer vi opptenningsved?</h3>
+                <p>Utforsk produksjonsprosessen for våre kvalitetsopptenningsved.</p>
+                <button onclick="redirectToArticle('produksjonsprosess.html')">Les mer</button>
+            </div>
 
-        <section class="category">
-            <h2><a href="produkter.html">Best Ved</a></h2>
+            <div class="article">
+                <h3>Hvordan investerer vi?</h3>
+                <p>Finn ut hvordan vi investerer og hva vi investerer i hos Plukkfiks.</p>
+                <button onclick="redirectToArticle('investering.html')">Les mer</button>
+            </div>
         </section>
     </div>
 </main>
-
-<div id="popup-instagram" class="popup">
-    <span class="popup-content">
-        <a href="https://www.instagram.com/sentralt.07" target="_blank">
-            <img src="instagram_image_url.jpg" alt="Instagram">
-        </a>
-        <span class="close" onclick="closePopup('popup-instagram')">&times;</span>
-    </span>
-</div>
-
-<div id="popup-youtube" class="popup">
-    <span class="popup-content">
-        <a href="https://www.youtube.com/@sentralt" target="_blank">
-            <img src="youtube_image_url.jpg" alt="YouTube">
-        </a>
-        <span class="close" onclick="closePopup('popup-youtube')">&times;</span>
-    </span>
-</div>
-
-<div id="popup-twitter" class="popup">
-    <span class="popup-content">
-        <a href="https://www.twitter.com/ytsentralt" target="_blank">
-            <img src="twitter_image_url.jpg" alt="Twitter">
-        </a>
-        <span class="close" onclick="closePopup('popup-twitter')">&times;</span>
-    </span>
-</div>
 
 <script src="script.js"></script>
 
