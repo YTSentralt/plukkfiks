@@ -5,62 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velkommen til Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="index-style.css"> <!-- Ny CSS for startsiden -->
+    <link rel="stylesheet" type="text/css" href="index-style.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Velkommen til Plukkfiks</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#opptenningsved">Utforsk Opptenningsved</a></li>
-                <li><a href="#artikler">Nye Artikler</a></li>
-            </ul>
-        </nav>
+<div class="container">
+    <div class="animated-text">
+        <div class="text" id="text">Plukkfiks</div>
+        <div class="overlay" id="overlay"></div>
     </div>
-</header>
-
-<main>
-    <div class="container">
-        <section class="intro-section" id="opptenningsved">
-            <h2>Utforsk Opptenningsved med Plukkfiks</h2>
-            <p>Finn kvalitetsopptenningsved og lær hvordan den produseres.</p>
-            <button onclick="redirectToProducts()">Se Produkter</button>
-        </section>
-    </div>
-</main>
-
-<footer>
-    <div class="container">
-        <section class="articles-section" id="artikler">
-            <h2>Nye Artikler</h2>
-            <div class="article">
-                <h3>Hvordan produserer vi opptenningsved?</h3>
-                <p>Utforsk produksjonsprosessen for våre kvalitetsopptenningsved.</p>
-                <button onclick="redirectToArticle('produksjonsprosessen.html')">Les mer</button>
-            </div>
-
-            <div class="article">
-                <h3>Hvordan investerer vi?</h3>
-                <p>Finn ut hvordan vi investerer og hva vi investerer i hos Plukkfiks.</p>
-                <button onclick="redirectToArticle('investering.html')">Les mer</button>
-            </div>
-        </section>
-    </div>
-</footer>
+</div>
 
 <script src="script.js"></script>
-
-<script>
-    function redirectToProducts() {
-        window.location.href = "produkter.html";
-    }
-
-    function redirectToArticle(articleUrl) {
-        window.location.href = articleUrl;
-    }
-</script>
 
 </body>
 </html>
