@@ -12,29 +12,33 @@
 <header>
     <div class="container">
         <h1>Velkommen til Plukkfiks</h1>
-        <p>Sosiale Medier:</p>
-        <ul class="social-links">
-            <li><a href="https://www.instagram.com/sentralt.07" target="_blank">Instagram</a></li>
-            <li><a href="https://www.youtube.com/@sentralt" target="_blank">YouTube</a></li>
-            <li><a href="https://www.twitter.com/ytsentralt" target="_blank">Twitter</a></li>
-        </ul>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#opptenningsved">Utforsk Opptenningsved</a></li>
+                <li><a href="#artikler">Nye Artikler</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <section class="intro-section">
+        <section class="intro-section" id="opptenningsved">
             <h2>Utforsk Opptenningsved med Plukkfiks</h2>
             <p>Finn kvalitetsopptenningsved og lær hvordan den produseres.</p>
             <button onclick="redirectToProducts()">Se Produkter</button>
         </section>
+    </div>
+</main>
 
-        <section class="articles-section">
+<footer>
+    <div class="container">
+        <section class="articles-section" id="artikler">
             <h2>Nye Artikler</h2>
             <div class="article">
                 <h3>Hvordan produserer vi opptenningsved?</h3>
                 <p>Utforsk produksjonsprosessen for våre kvalitetsopptenningsved.</p>
-                <button onclick="redirectToArticle('produksjonsprosess.html')">Les mer</button>
+                <button onclick="redirectToArticle('produksjonsprosessen.html')">Les mer</button>
             </div>
 
             <div class="article">
@@ -44,9 +48,19 @@
             </div>
         </section>
     </div>
-</main>
+</footer>
 
 <script src="script.js"></script>
+
+<script>
+    function redirectToProducts() {
+        window.location.href = "produkter.html";
+    }
+
+    function redirectToArticle(articleUrl) {
+        window.location.href = articleUrl;
+    }
+</script>
 
 </body>
 </html>
