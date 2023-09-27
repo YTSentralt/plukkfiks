@@ -1,54 +1,48 @@
-/* Legg til styling for forsiden (index) her */
 body {
-    background-color: #2C3E50; /* Mørkegrått */
-    color: #FFFFFF; /* Hvit tekst */
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  background-color: #121212; /* Mørk bakgrunn */
+  color: #fff; /* Kontrastfarge for tekst */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
-header {
-    background-color: #1F292E; /* Mørkere grått */
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.main-container {
+  text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.entry-animation {
+  animation: fadeIn 1.5s forwards; /* Inngangsanimasjon */
 }
 
-h1 {
-    color: #8B008B; /* Lilla */
-    margin-bottom: 20px;
-}
-
-.social-links img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.social-links a {
-    color: #8B008B; /* Lilla */
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #4B0082; /* Mørkere lilla */
+.logo {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ff007f; /* Rosa farge for logo */
 }
 
 .explore-button {
-    background-color: #8B008B; /* Lilla */
-    color: #000; /* Svart */
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: #ff007f; /* Rosa bakgrunnsfarge */
+  border: none;
+  border-radius: 30px; /* Avrundede kanter */
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease; /* Overgang for bakgrunnsfarge */
 }
 
 .explore-button:hover {
-    background-color: #4B0082; /* Mørkere lilla */
+  background-color: #ff0055; /* Endret rosa farge ved hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
