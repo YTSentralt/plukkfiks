@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Våre Produkter - Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .category {
+            background-color: #4c0000; /* Mørkerød bakgrunnsfarge */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Skyggeeffekt */
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .category:hover {
+            background-color: #660000; /* Endret mørkerød bakgrunnsfarge ved hover */
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Glow-effekt */
+        }
+    </style>
 </head>
 <body>
 
@@ -16,16 +30,8 @@
 
 <main>
     <div class="container">
-        <section>
-            <h2>Dårlig Ved</h2>
-        </section>
-
-        <section>
-            <h2>God Ved</h2>
-        </section>
-
-        <section>
-            <h2>Best Ved</h2>
+        <section class="category">
+            <h2>Opptenningsved</h2>
         </section>
     </div>
 </main>
