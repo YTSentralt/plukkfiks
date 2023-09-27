@@ -1,18 +1,28 @@
 /* Legg til styling for forsiden (index) her */
-.social-links {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+body {
+    background-color: #2C3E50; /* Mørkegrått */
+    color: #8B008B; /* Lilla */
 }
 
-.social-links a {
-    margin-right: 10px;
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Svart med gjennomsiktighet */
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #8B008B; /* Lilla */
 }
 
 .social-links a img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease-in-out;
+    margin-right: 10px;
 }
 
 .social-links a img:hover {
