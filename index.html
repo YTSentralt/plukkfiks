@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velkommen til Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index-style.css">
 </head>
 <body>
 
-<div class="container">
-    <div class="animated-text" onmouseover="hoverEffect(this)" onmouseout="unHoverEffect(this)">
-        <span class="overlay"></span>
-        <span class="text">Plukkfiks</span>
+<header>
+    <div class="container">
+        <h1>Velkommen til Plukkfiks</h1>
     </div>
-</div>
+</header>
+
+<main>
+    <div class="container">
+        <section class="intro-section">
+            <h2>Utforsk Opptenningsved med Plukkfiks</h2>
+            <p>Finn kvalitetsopptenningsved og lær hvordan den produseres.</p>
+            <button onclick="redirectToProducts()">Se Produkter</button>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Sosiale Medier</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/sentralt.07" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@sentralt" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.twitter.com/ytsentralt" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt Oss</h3>
+                <p>Email: kontakt@plukkfiks.no</p>
+                <p>Telefon: 123-456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Powered By Plukkfiks UB. Alle rettigheter reservert. Developed By Sentralt</p>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
+
+<script>
+    function redirectToProducts() {
+        window.location.href = "produkter.html";
+    }
+</script>
 
 </body>
 </html>
