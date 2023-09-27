@@ -1,61 +1,34 @@
-body {
-    background-color: #1b1b1b;
-    color: #ffffff;
+/* Legg til styling for forsiden (index) her */
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
-header, footer {
-    background-color: #111111;
-    padding: 20px;
+.social-links a {
+    margin-right: 10px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
 }
 
-h1, h2, h3 {
-    color: #ffffff;
+.social-links a img:hover {
+    transform: scale(1.2);
 }
 
-.intro-section {
-    padding: 50px 0;
-    text-align: center;
-}
-
-button {
+.explore-button {
+    background-color: #8B008B; /* Lilla */
+    color: #000; /* Svart */
     padding: 10px 20px;
-    background-color: #333333;
-    color: #ffffff;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
-    background-color: #555555;
-}
-
-button.glow-effect:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-}
-
-button.glow-effect:active {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    color: #aaaaaa;
+.explore-button:hover {
+    background-color: #4B0082; /* Mørkere lilla */
 }
