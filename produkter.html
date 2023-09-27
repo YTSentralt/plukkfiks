@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Våre Produkter - Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="produkter.css"> <!-- Ny CSS for produkter -->
+    <link rel="stylesheet" type="text/css" href="production-process-style.css"> <!-- Ny CSS for produksjonsprosessen -->
 </head>
 <body>
 
 <header>
     <div class="container">
         <h1>Våre Produkter</h1>
+        <button onclick="goBack()" class="back-button glow-effect">Tilbake</button>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <section class="category" id="opptenningsved">
-            <h2>Opptenningsved</h2>
-        </section>
+        <!-- Innhold for produkter.html -->
     </div>
 </main>
 
 <script src="script.js"></script>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 
 </body>
 </html>

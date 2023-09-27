@@ -3,14 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produseringsprosess - Plukkfiks</title>
+    <title>Produseringsprosess for opptenningsved</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="production-process-style.css"> <!-- Ny CSS for produksjonsprosessen -->
 </head>
 <body>
 
 <header>
     <div class="container">
         <h1>Produseringsprosess for opptenningsved</h1>
+        <button onclick="goBack()" class="back-button glow-effect">Tilbake</button>
     </div>
 </header>
 
@@ -30,6 +32,12 @@
 </main>
 
 <script src="script.js"></script>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 
 </body>
 </html>
