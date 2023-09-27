@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="production-style.css"> <!-- Ny CSS for produksjon -->
 </head>
-<body>
+<body class="produsjon">
 
 <header>
     <div class="container">
         <h1>Produseringsprosess for opptenningsved</h1>
+        <button onclick="goBack()" class="back-button glow-effect">Tilbake</button>
     </div>
 </header>
 
@@ -30,12 +31,6 @@
     </div>
 </main>
 
-<script src="script.js"></script>
-
-</body>
-</html>
-
-
 <footer>
     <div class="container">
         <div class="footer-content">
@@ -48,3 +43,12 @@
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>

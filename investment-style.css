@@ -1,66 +1,35 @@
-<!DOCTYPE html>
-<html lang="no" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investering - Plukkfiks</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="investment-style.css"> <!-- Ny CSS for investering -->
-</head>
-<body>
+/* Stil for investering.html */
 
-<header>
-    <div class="container">
-        <h1>Investering hos Plukkfiks</h1>
-        <button onclick="goBack()" class="back-button glow-effect">Tilbake</button>
-    </div>
-</header>
+/* Bakgrunnsfarge for hele siden */
+body {
+    background-color: #181818;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
 
-<main>
-    <div class="container">
-        <section class="article-section">
-            <h2>Hvordan vi investerer</h2>
-            <p>
-                Vi fokuserer på bærekraft og gjenbruk i våre investeringer hos Plukkfiks.
-                Inntjeningen fra salget av opptenningsved blir nøye investert i verktøy og utstyr som bidrar til å forbedre produksjonsprosessen og opprettholde vårt fokus på bærekraft.
-            </p>
-            <p>
-                Disse investeringene er en viktig del av vår strategi for å levere kvalitetsprodukter og samtidig ivareta miljøet.
-            </p>
-        </section>
-    </div>
-</main>
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
 
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="social-media">
-                <h3>Sosiale Medier</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/sentralt.07" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/@sentralt" target="_blank">YouTube</a></li>
-                    <li><a href="https://www.twitter.com/ytsentralt" target="_blank">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h3>Kontakt Oss</h3>
-                <p>Email: kontakt@plukkfiks.no</p>
-                <p>Telefon: 123-456-7890</p>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Powered By Plukkfiks UB. Alle rettigheter reservert &copy; Plukkfiks</p>
-        </div>
-    </div>
-</footer>
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
 
-<script src="script.js"></script>
+/* Artikkelkort */
+.article {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #363636;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
 
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
+.article:hover {
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.5);
+    transform: scale(1.05);
+}
 
-</body>
-</html>
+/* ... annen eksisterende stil ... */
