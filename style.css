@@ -1,64 +1,44 @@
-body {
-    background-color: #1d1d1d; /* Mørkegrå bakgrunn */
-    color: #ffffff; /* Hvit tekst */
-    font-family: Arial, sans-serif; /* Generell font */
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #2c3e50; /* Mørkeblått header */
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-    color: #ffffff; /* Hvit tekst */
-}
-
-nav {
-    text-align: center;
-}
-
-nav a {
-    color: #ffffff; /* Hvit tekst for lenker */
-    margin: 0 10px;
+/* Legg til styling for "Utforsk mer" knappen */
+.explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #8e44ad;
+    border-radius: 10px;
     text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
-nav a:hover {
-    border-bottom: 2px solid #ffffff; /* Hvitt understrek ved hover */
+.explore-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(142, 68, 173, 0.5);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
 }
 
-.main-content {
-    padding: 20px;
-}
-
-.footer {
-    background-color: #34495e; /* Mørkeblå footer */
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
+.explore-button:hover:before {
     width: 100%;
-    bottom: 0;
 }
 
-.footer p {
-    margin: 0;
-    color: #ffffff; /* Hvit tekst */
+.explore-button:hover {
+    background: rgba(142, 68, 173, 0.3);
+    border: 2px solid rgba(142, 68, 173, 0.7);
+    color: #8e44ad;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.7);
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(142, 68, 173, 0.7);
 }
 
-.footer a {
-    color: #ffffff; /* Hvit tekst for lenker */
-    text-decoration: none;
-}
-
-.footer a:hover {
-    border-bottom: 1px solid #ffffff; /* Hvitt understrek ved hover */
+.explore-button:active {
+    transform: translateY(0);
 }
