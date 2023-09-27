@@ -1,12 +1,16 @@
 /* Legg til styling for forsiden (index) her */
 body {
     background-color: #2C3E50; /* Mørkegrått */
-    color: #8B008B; /* Lilla */
+    color: #FFFFFF; /* Hvit tekst */
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Svart med gjennomsiktighet */
+    background-color: #1F292E; /* Mørkere grått */
     padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -16,23 +20,29 @@ header {
 
 h1 {
     color: #8B008B; /* Lilla */
+    margin-bottom: 20px;
 }
 
-.social-links a img {
+.social-links img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s ease-in-out;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
-.social-links a img:hover {
-    transform: scale(1.2);
+.social-links a {
+    color: #8B008B; /* Lilla */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #4B0082; /* Mørkere lilla */
 }
 
 .explore-button {
     background-color: #8B008B; /* Lilla */
     color: #000; /* Svart */
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
