@@ -41,6 +41,11 @@ function showCategories() {
     const categories = document.getElementById('categories');
     categories.style.display = 'block';
 }
+
 function redirectToProducts() {
     window.location.href = "produkter.html";
+}
+
+function redirectToArticle(articleUrl) {
+    window.location.href = articleUrl;
 }
