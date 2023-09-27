@@ -1,5 +1,5 @@
 body {
-  background-color: #000; /* Mørk bakgrunn */
+  background-color: #121212; /* Mørk bakgrunn */
   color: #fff; /* Kontrastfarge for tekst */
   display: flex;
   align-items: center;
@@ -16,21 +16,26 @@ body {
   animation: fadeIn 1.5s forwards; /* Inngangsanimasjon */
 }
 
-.explore-button, .learn-more-button {
-  padding: 10px 20px;
-  margin: 10px;
-  text-decoration: none;
-  color: #fff;
+.logo {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ff007f; /* Rosa farge for logo */
 }
 
 .explore-button {
-  background-color: transparent;
-  border: 2px solid #ff007f; /* Rosa glow-effekt */
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.7); /* Rosa glow-effekt */
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: #ff007f; /* Rosa bakgrunnsfarge */
+  border: none;
+  border-radius: 30px; /* Avrundede kanter */
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease; /* Overgang for bakgrunnsfarge */
 }
 
 .explore-button:hover {
-  background-color: #ff007f; /* Rosa glow-effekt ved hover */
+  background-color: #ff0055; /* Endret rosa farge ved hover */
 }
 
 @keyframes fadeIn {
