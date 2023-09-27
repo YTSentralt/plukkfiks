@@ -1,8 +1,56 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title></title>
+    <style>
+        body {
+          background-color: #121212; /* Mørk bakgrunn */
+          color: #fff; /* Kontrastfarge for tekst */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+        }
+
+        .main-container {
+          text-align: center;
+        }
+
+        .entry-animation {
+          animation: fadeIn 1.5s forwards; /* Inngangsanimasjon */
+        }
+
+        .logo {
+          font-size: 3em;
+          font-weight: bold;
+          color: #ff007f; /* Rosa farge for logo */
+        }
+
+        .explore-button {
+          padding: 15px 30px;
+          margin-top: 20px;
+          background-color: #ff007f; /* Rosa bakgrunnsfarge */
+          border: none;
+          border-radius: 30px; /* Avrundede kanter */
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.5em;
+          transition: background-color 0.3s ease; /* Overgang for bakgrunnsfarge */
+        }
+
+        .explore-button:hover {
+          background-color: #ff0055; /* Endret rosa farge ved hover */
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+    </style>
 </head>
 <body>
 <div class="main-container">
